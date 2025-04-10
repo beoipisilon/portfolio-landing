@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 24%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 24%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 24%;
+
+    --primary: 0 0% 24%;
+    --primary-foreground: 0 0% 96%;
+
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 24%;
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+
+    --accent: 0 0% 65%;
+    --accent-foreground: 0 0% 24%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 96%;
+
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 0 0% 24%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0 0% 24%;
+    --foreground: 0 0% 96%;
+
+    --card: 0 0% 24%;
+    --card-foreground: 0 0% 96%;
+
+    --popover: 0 0% 24%;
+    --popover-foreground: 0 0% 96%;
+
+    --primary: 0 0% 96%;
+    --primary-foreground: 0 0% 24%;
+
+    --secondary: 0 0% 30%;
+    --secondary-foreground: 0 0% 96%;
+
+    --muted: 0 0% 30%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 0 0% 30%;
+    --accent-foreground: 0 0% 96%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 0 0% 96%;
+
+    --border: 0 0% 30%;
+    --input: 0 0% 30%;
+    --ring: 0 0% 83%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-dark text-light font-sans;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-mono;
+  }
+}
+
+@layer utilities {
+  .typing-container {
+    @apply inline-block;
+  }
+  
+  .typing-text {
+    @apply overflow-hidden whitespace-nowrap border-r-4 border-white animate-typing animate-blink;
+  }
+
+  .no-cursor {
+    @apply border-r-0;
+  }
+
+  .vertical-text {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+  }
+  
+  /* Hover scale animation */
+  .hover-scale {
+    @apply transition-transform duration-300 hover:scale-105;
+  }
+  
+  /* Link hover animation */
+  .story-link {
+    @apply relative inline-block after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-light after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left;
+  }
+  
+  /* Responsive adjustments for hero section */
+  @media (max-width: 768px) {
+    .hero-image-container {
+      @apply w-full h-full opacity-40;
+    }
+    
+    .hero-content-center {
+      @apply text-center;
+    }
+    
+    .hero-content-right {
+      @apply right-0 left-0 px-8 text-center;
+    }
+  }
+}
+
+/* Animation keyframes */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Typing animation */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+}
+
+/* Slide animations */
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-right {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-left {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Animation classes */
+.animate-fade-in {
+  animation: fade-in 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+.animate-scale-in {
+  animation: scale-in 0.6s ease-out forwards;
+  opacity: 0;
+}
+
+.animate-slide-up {
+  animation: slide-up 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+.animate-slide-right {
+  animation: slide-right 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+.animate-slide-left {
+  animation: slide-left 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+.animate-typing {
+  animation: typing 3.5s steps(40, end), blink 0.75s step-end infinite;
+  width: 0;
+}
+
+/* Scroll-triggered animations */
+@media (prefers-reduced-motion: no-preference) {
+  [data-animate-on-scroll] {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  
+  [data-animate-on-scroll].is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
