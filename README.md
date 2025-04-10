@@ -17,8 +17,8 @@ A modern, responsive portfolio website built with React, TypeScript, and Tailwin
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/beoipisilon/portfoliolanding.git
-cd portfoliolanding
+git clone https://github.com/beoipisilon/portfolio-landing.git
+cd portfolio-landing
 ```
 
 2. Install dependencies:
