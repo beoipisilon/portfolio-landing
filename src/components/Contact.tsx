@@ -13,33 +13,33 @@ const Contact = () => {
   const t = translations[language].contact;
   const socialLinks: SocialLink[] = [
     {
-      platform: "github.com/nik19a",
-      url: "https://github.com/nik19a",
+      platform: "github.com/",
+      url: "https://github.com/",
       icon: <Github className="text-dark w-5 h-5 font-bold" />
     },
     {
       platform: "@nik19a",
-      url: "https://twitter.com/nik19a",
+      url: "https://twitter.com/",
       icon: <Twitter className="text-dark w-5 h-5 font-bold" />
     },
     {
-      platform: "linkedin.com/in/nik19a",
-      url: "https://linkedin.com/in/nik19a",
+      platform: "linkedin.com/",
+      url: "https://linkedin.com/",
       icon: <Linkedin className="text-dark w-5 h-5 font-bold" />
     },
     {
-      platform: "khvatov@nik19a.me",
-      url: "mailto:khvatov@nik19a.me",
+      platform: "test@gmail.com",
+      url: "mailto:test@gmail.com",
       icon: <Mail className="text-dark w-5 h-5 font-bold" />
     },
     {
-      platform: "@nik19a.me",
-      url: "https://nik19a.me",
+      platform: "test.com",
+      url: "https://test.com",
       icon: <Globe className="text-dark w-5 h-5 font-bold" />
     },
     {
-      platform: "@nik19a",
-      url: "https://facebook.com/nik19a",
+      platform: "test.com",
+      url: "https://test.com",
       icon: <Facebook className="text-dark w-5 h-5 font-bold" />
     }
   ];
