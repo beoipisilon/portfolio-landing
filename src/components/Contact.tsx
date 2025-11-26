@@ -14,7 +14,7 @@ const Contact = () => {
   const socialLinks: SocialLink[] = [
     {
       platform: "github.com/",
-      url: "https://github.com/",
+      url: "https://github.com/beoipisilon",
       icon: <Github className="text-dark w-5 h-5 font-bold" />
     },
     {

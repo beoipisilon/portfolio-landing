@@ -1,55 +1,23 @@
-# Portfolio Website
+[![Vercel](https://therealsujitk-vercel-badge.vercel.app/?app=portfolio-landing-three](https://portfolio-landing-three.vercel.app/)
 
-A modern, responsive portfolio website built with React, TypeScript, and Tailwind CSS. The website features a clean, minimalist design with smooth animations and bilingual support (English and Portuguese).
+# Portfolio Landing Page
 
-## Tech Stack
+##### Created : 05/04/2025
 
-- [React](https://reactjs.org/) - A JavaScript library for building user interfaces
-- [TypeScript](https://www.typescriptlang.org/) - Typed JavaScript
-- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
-- [Framer Motion](https://www.framer.com/motion/) - Animation library
-- [Lucide Icons](https://lucide.dev/) - Beautiful & consistent icons
-- [Vite](https://vitejs.dev/) - Next Generation Frontend Tooling
+### Preview
 
-## Getting Started
+![Portfolio Preview](./public/Preview.png)
 
-### Installation
+#### Languages
 
-1. Clone the repository:
-```bash
-git clone https://github.com/beoipisilon/portfolio-landing.git
-cd portfolio-landing
-```
+<div align="center">
 
-2. Install dependencies:
-```bash
-npm install
-# or
-yarn install
-```
+  <img alt="React" title="React" width="45px" src="https://raw.githubusercontent.com/github/explore/master/topics/react/react.png" />
 
-3. Start the development server:
-```bash
-npm run dev
-# or
-yarn dev
-```
+  <img alt="TypeScript" title="TypeScript" width="45px" src="https://raw.githubusercontent.com/github/explore/master/topics/typescript/typescript.png" />
 
-4. Open [http://localhost:5173](http://localhost:5173) to view it in your browser.
+  <img alt="Tailwind CSS" title="Tailwind CSS" width="45px" src="https://raw.githubusercontent.com/github/explore/master/topics/tailwind/tailwind.png" />
 
+  <img alt="Vite" title="Vite" width="45px" src="https://raw.githubusercontent.com/github/explore/master/topics/vite/vite.png" />
 
-## Deployment
-
-The website can be deployed to any static hosting service. Here's how to build for production:
-
-```bash
-npm run build
-# or
-yarn build
-```
-
-The build artifacts will be stored in the `dist/` directory.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+</div>
