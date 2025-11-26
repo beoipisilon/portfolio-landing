@@ -1,4 +1,4 @@
-[![Vercel](https://therealsujitk-vercel-badge.vercel.app/?app=portfolio-landing-three](https://portfolio-landing-three.vercel.app/)
+[![Vercel](https://therealsujitk-vercel-badge.vercel.app/?app=portfolio-landing-three)](https://portfolio-landing-three.vercel.app/)
 
 # Portfolio Landing Page
 
